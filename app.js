@@ -27,10 +27,11 @@ function showMenu(animate) {
 }
 
 window.onresize = () => {
-  if ($(window).width() > 600) {
+  if ($(window).outerWidth() > 900) {
     showMenu(false);
   } else {
     hideMenu(false);
   }
 };
 
+window.onresize();
