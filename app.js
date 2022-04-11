@@ -35,3 +35,7 @@ window.onresize = () => {
 };
 
 window.onresize();
+
+window.onscroll = () => {
+$(".image").css('opacity', 100 / $(window).scrollTop());
+}
